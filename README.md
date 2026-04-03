@@ -8,6 +8,8 @@
 
 > Automated waste sorting and conveyor cleaning workflow — programmed on a real **Orangewood 6-DOF collaborative robot**, then reconstructed as a digital twin in **CoppeliaSim** using the UR5 model.
 
+**Amrita Vishwa Vidyapeetham, Bengaluru — End Semester Robotics Project**
+
 ---
 
 ## 🎥 Simulation Demo
@@ -50,11 +52,9 @@ In real recycling facilities, dust and debris on containers damage downstream pr
 
 ## 🤖 Hardware — Orangewood 6-DOF Manipulator
 
-<!-- Upload photos to hardware/images/ and update filenames below -->
-
-| Full Lab Setup | Robot in Operation | Picking the Can |
+| Full Lab Setup | Robot in Operation |
 |:-:|:-:|
-| ![Setup](hardware/images/setup.jpeg) | ![Operation](hardware/images/operation.jpeg) |
+| ![Setup](hardware/images/setup.jpeg) | ![Operation](hardware/images/Operation.jpeg) |
 
 *Orangewood 6-axis Robot Manipulator — Amrita Vishwa Vidyapeetham Robotics Lab*
 
@@ -74,8 +74,6 @@ In real recycling facilities, dust and debris on containers damage downstream pr
 ## 📐 Kinematic Analysis — RoboAnalyzer
 
 Before hardware execution, the robot was modeled in **RoboAnalyzer** to study joint structure and validate reachable poses through forward kinematics.
-
-<!-- Upload RoboAnalyzer screenshots to docs/images/ -->
 
 | 6-DOF Robot Structure | Forward Kinematics Result |
 |:-:|:-:|
@@ -150,7 +148,7 @@ The **UR5** was chosen from CoppeliaSim's built-in library as it shares the same
 **Requirement:** [CoppeliaSim Edu V4.10+](https://www.coppeliarobotics.com/)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/waste-sorting-robot-simulation.git
+git clone https://github.com/Gurleen121/waste-sorting-robot-simulation.git
 ```
 
 1. Open CoppeliaSim
@@ -171,6 +169,30 @@ git clone https://github.com/YOUR_USERNAME/waste-sorting-robot-simulation.git
 | Gripper reliability | ✅ Consistent pick/place on flat cylindrical surfaces |
 | Conveyor | ✅ Automated plate + can transport |
 | Hardware–simulation parity | ✅ Identical waypoint teaching approach on both platforms |
+
+---
+
+## 📁 Repository Structure
+
+```
+waste-sorting-robot-simulation/
+│
+├── README.md
+├── LICENSE
+│
+├── simulation/
+│   ├── waste_sorting_complete.lua    ← Lua script (all 11 steps)
+│   └── waste_sorting_scene.ttt       ← CoppeliaSim scene (open this)
+│
+├── hardware/
+│   └── images/                       ← Real robot experiment photos
+│
+└── docs/
+    ├── methodology.md                ← Full technical methodology
+    └── images/                       ← RoboAnalyzer screenshots
+```
+
+📄 For full technical details see **[docs/methodology.md](docs/methodology.md)**
 
 ---
 
