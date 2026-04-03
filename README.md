@@ -53,7 +53,7 @@ In real recycling facilities, dust and debris on containers damage downstream pr
 <!-- Upload photos to hardware/images/ and update filenames below -->
 
 | Full Lab Setup | Robot in Operation | Picking the Can |
-|:-:|:-:|:-:|
+|:-:|:-:|
 | ![Setup](hardware/images/setup.jpeg) | ![Operation](hardware/images/operation.jpeg) |
 
 *Orangewood 6-axis Robot Manipulator — Amrita Vishwa Vidyapeetham Robotics Lab*
